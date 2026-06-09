@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Fiori Horizon specific resets */
+:root {
+  --bg-shell: #354a5f;
+  --bg-main: #f3f4f7;
+  --bg-card: #ffffff;
+  --text-main: #32363a;
+  --text-muted: #697682;
+  --border-light: #e5e7eb;
+  color-scheme: light;
+}
+
+.dark-theme {
+  --bg-shell: #1a2228;
+  --bg-main: #141a1f;
+  --bg-card: #202931;
+  --text-main: #f5f6f7;
+  --text-muted: #a6b2b9;
+  --border-light: #32363a;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s, color 0.3s;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bg-fiori-shell { background-color: var(--bg-shell); }
+.bg-fiori-card { background-color: var(--bg-card); }
+.text-fiori-main { color: var(--text-main); }
+.text-fiori-muted { color: var(--text-muted); }
+.border-fiori-light { border-color: var(--border-light); }
+

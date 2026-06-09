@@ -1,0 +1,6 @@
+{
+  "name": "SAP Fiori Gate Pass App",
+  "description": "Enterprise SAP Fiori Gate Pass Management Application with Dashboard and Workflow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
